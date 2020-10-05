@@ -1,0 +1,22 @@
+{
+  "name": "tobatour",
+  "version": "1.0.0",
+  "description": "Landing page for Lake Toba",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Febby/Tobatour.git"
+  },
+  "author": "Febby Gunawan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Febby/Tobatour/issues"
+  },
+  "homepage": "https://github.com/Febby/Tobatour#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
