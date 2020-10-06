@@ -1,0 +1,31 @@
+body{
+    font-family:$font,serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color:$body-text;
+    padding: 3rem;
+}
+
+.heading-primary{
+    color:#fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 60px;
+
+    &--main{
+        display: block;
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: 35px;
+        animation: fadeInLeft 1s ease-out;
+        // animation-delay: 3s;
+    }
+    
+    &--sub{
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 17.4px;
+        animation: fadeInRight 1s ease-out;
+    }
+}
