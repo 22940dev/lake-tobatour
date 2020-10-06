@@ -1,0 +1,8 @@
+//clear float between elements
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
