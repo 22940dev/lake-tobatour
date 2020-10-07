@@ -1,10 +1,10 @@
 .row{
     //1140px divide by 10
     max-width: $grid-width;
-    background-color: lightblue;
+    // background-color: lightblue;
     margin:0 auto;
     
-    //excep the last child
+    //except the last child
     &:not(:last-child){
     margin-bottom: $gutter-vertical;
     }
@@ -12,7 +12,7 @@
     @include clearfix;
 
     [class^="col-"]{
-        background-color: orangered;
+        // background-color: orangered;
         float: left;
 
         &:not(:last-child){
