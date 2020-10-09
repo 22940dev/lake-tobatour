@@ -45,6 +45,14 @@
         }
     }
     
+    &--green{
+        background-color: $color-tertiary-dark;
+        color:#fff;
+        &::after{
+            background-color: $color-tertiary-dark;
+        }
+    }
+    
     &--animated{
         animation:fadeInUp .5s ease-out .75s;
         animation-fill-mode: backwards;
