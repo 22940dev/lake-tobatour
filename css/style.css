@@ -106,6 +106,29 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-family: inherit;
+  color: inherit;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(247, 247, 247, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(44, 62, 80, 0.1);
+    border-bottom: 3px solid #2C3E50; }
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #ffa502; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+
 .btn:link, .btn:visited {
   font-weight: 700;
   font-size: 1.6rem;
@@ -368,7 +391,8 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .15; }
+  opacity: .15;
+  overflow: hidden; }
   .bg-video__content {
     height: 100%;
     width: 100%;
@@ -446,3 +470,17 @@ body {
 .section-stories {
   position: relative;
   padding: 15rem 0; }
+
+.section-booking {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #0a82fbcc, #2c3e50cc); }
+
+.booking-area {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(44, 62, 80, 0.2);
+  height: 50rem; }
+  .booking-area__form {
+    width: 50%;
+    padding: 6rem; }
