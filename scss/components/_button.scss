@@ -1,7 +1,6 @@
 //button
 .btn{
-    
-    &:link, &:visited{
+    &,&:link, &:visited{
         font-weight: 700;
         font-size: $default-font-size;
         text-transform: uppercase;
@@ -11,7 +10,11 @@
         border-radius: 100px;
         transition: all .2s;
         position: relative;
+        //for button element
+        border:none;
+        cursor: pointer;
     }
+
     &:hover{
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba($btn-color,.2);
@@ -20,7 +23,8 @@
             opacity: 0;
         }
     }
-    &:active{
+    &:active,&:focus{
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($btn-color,.2);
     }
@@ -42,6 +46,14 @@
         color:#777;
         &::after{
             background-color: #fff;
+        }
+    }
+
+    &--primary-light{
+        background-color:$color-primary-light;
+        color:#fff;
+        &::after{
+            background-color: $color-primary-light;
         }
     }
     
