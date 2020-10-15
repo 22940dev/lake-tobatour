@@ -8,10 +8,26 @@
 }
 html{
     // defined what 1rem is
-    font-size: 62.5%;
+    font-size: 62.5%; // 1rem = 10px ; 10px /16px = 62.5%
+
+    @include responsive(tab-land){// width < 1200?
+        font-size: 56.25%; // 1 rem = 9px , 9/16 = 56.25%
+    }
+
+    @include responsive(tab-port){ // width <900?
+        font-size: 50%; // 1rem = 8px, 8/16 = 50%
+    }
+    @include responsive(lg-screen){
+        font-size: 75%; //1rem = 12, 12/16
+    }
 }
 //structure
 
 body{
     box-sizing: border-box;
+    padding: 3rem;
+
+    @include responsive(tab-port){ // width <900?
+        padding: 0;
+    }
 }
