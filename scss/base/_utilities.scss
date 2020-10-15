@@ -4,9 +4,16 @@
 
 .u-mg-btm-big{
     margin-bottom: 8rem!important;
+    @include responsive(tab-port){
+        margin-bottom: 5rem!important;
+    }
 }
 .u-mg-btm-medium{
     margin-bottom: 4rem!important;
+
+    @include responsive(tab-port){
+        margin-bottom: 3rem!important;
+    }
 }
 .u-mg-btm-small{
     margin-bottom: 1.5rem!important;
