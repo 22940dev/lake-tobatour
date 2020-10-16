@@ -9,6 +9,15 @@
     font-size: $default-font-size;
     transform: skewX(-12deg);
 
+    @include responsive(tab-port){
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+
+    @include responsive(phone){
+        transform: skewX(0);
+    }
 
     &__shape{
         width: 15rem;
@@ -22,6 +31,9 @@
         backface-visibility: hidden;
         overflow: hidden;
         position: relative;
+        @include responsive(phone){
+            transform: translateX(-3rem) skewX(0);
+        }
     }
 
     &__avatar{
@@ -33,6 +45,9 @@
 
     &__text{
         transform: skewX(12deg);
+        @include responsive(phone){
+            transform: skewX(0);
+        }
     }
     &__caption{
         position: absolute;
@@ -58,5 +73,6 @@
         transform: translateX(-4rem) scale(1);
         filter: blur(3px) brightness(80%);
     }
+
 
 }
