@@ -1,6 +1,20 @@
-// var element = document.querySelector("#about-toba");
+"use strict";
 
-// // smooth scroll to element and align it at the bottom
+//Set default state for navigation toggle
+function uncheckNav() {
+  document.getElementById("nav-toggle").checked = false;
+}
 
+// set navigation state once clicked
+function setNavOnclick() {
+  Array.from(document.getElementsByClassName("navigation__link")).map(
+    (navLink) => navLink.addEventListener("click", uncheckNav)
+  );
+}
 
-// element.scrollIntoView({ behavior: 'smooth', block: 'end'});
+// invoke function
+function main() {
+  setNavOnclick();
+}
+
+main();
